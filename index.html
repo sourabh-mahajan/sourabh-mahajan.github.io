@@ -5,24 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sourabh Mahajan - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Header Section -->
-  <header id="intro">
-    <h1>Sourabh Mahajan</h1>
-    <p>Product Manager | Developer | Tech Enthusiast</p>
-    <button class="scroll-button" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })">
-      Scroll Down
-    </button>
+  <header>
+    <div class="hero">
+      <h1>Sourabh Mahajan</h1>
+      <p>Product Manager | Developer | Tech Enthusiast</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
   </header>
 
   <!-- About Section -->
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
+      <img src="images/profile.jpg" alt="Sourabh Mahajan" class="profile-img">
       <p>Hello! I'm Sourabh Mahajan, a passionate product manager with a focus on creating user-centric solutions. I have a strong background in project management and a keen interest in product development, technology, and innovation. My goal is to build impactful products that solve real-world problems.</p>
     </div>
   </section>
@@ -54,16 +54,14 @@
       <h2>Projects</h2>
       <div class="projects">
         <div>
+          <img src="images/project1.png" alt="Project 1" class="project-img">
           <h3>Project 1</h3>
           <p>Focused on improving the user experience and enhancing accessibility.</p>
         </div>
         <div>
+          <img src="images/project2.png" alt="Project 2" class="project-img">
           <h3>Project 2</h3>
           <p>Aimed at automating key business processes for increased efficiency.</p>
-        </div>
-        <div>
-          <h3>Project 3</h3>
-          <p>Developed a cloud-based application for seamless team collaboration.</p>
         </div>
       </div>
     </div>
@@ -77,18 +75,18 @@
       <div class="contact">
         <div>
           <h3>Email</h3>
-          <p><a href="mailto:srmahajan24@gmail.com">sourabh.mahanjan@example.com</a></p>
+          <p><a href="mailto:sourabh.mahanjan@example.com">sourabh.mahanjan@example.com</a></p>
         </div>
         <div>
           <h3>LinkedIn</h3>
-          <p><a href="https://www.linkedin.com/in/sourabh-mahajan24" target="_blank">LinkedIn Profile</a></p>
+          <p><a href="https://www.linkedin.com/in/sourabh-mahajan" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></p>
         </div>
         <div>
           <h3>GitHub</h3>
-          <p><a href="https://github.com/sourabh-mahajan" target="_blank">GitHub Profile</a></p>
+          <p><a href="https://github.com/sourabh-mahajan" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a></p>
         </div>
       </div>
-      <button>Get in Touch</button>
+      <button class="cta-button">Get in Touch</button>
     </div>
   </section>
 
@@ -97,7 +95,6 @@
     <p>&copy; 2025 Sourabh Mahajan | <a href="https://github.com/sourabh-mahajan" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/sourabh-mahajan" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 
