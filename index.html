@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sourabh Mahajan - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Sourabh Mahajan</h1>
-      <p>Product Manager | Developer | Tech Enthusiast</p>
-    </div>
+  <header id="intro">
+    <h1>Sourabh Mahajan</h1>
+    <p>Product Manager | Developer | Tech Enthusiast</p>
+    <button class="scroll-button" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })">
+      Scroll Down
+    </button>
   </header>
 
   <!-- About Section -->
@@ -30,15 +32,15 @@
     <div class="container">
       <h2>Skills</h2>
       <div class="skills">
-        <div class="skill-item">
+        <div>
           <h3>Project Management</h3>
           <p>Agile, Scrum, Lean</p>
         </div>
-        <div class="skill-item">
+        <div>
           <h3>Product Management</h3>
           <p>Roadmaps, Strategy, User-Centric Design</p>
         </div>
-        <div class="skill-item">
+        <div>
           <h3>Technical Skills</h3>
           <p>HTML, CSS, JavaScript, Python</p>
         </div>
@@ -51,15 +53,15 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="projects">
-        <div class="project-item">
+        <div>
           <h3>Project 1</h3>
           <p>Focused on improving the user experience and enhancing accessibility.</p>
         </div>
-        <div class="project-item">
+        <div>
           <h3>Project 2</h3>
           <p>Aimed at automating key business processes for increased efficiency.</p>
         </div>
-        <div class="project-item">
+        <div>
           <h3>Project 3</h3>
           <p>Developed a cloud-based application for seamless team collaboration.</p>
         </div>
@@ -94,6 +96,9 @@
   <footer>
     <p>&copy; 2025 Sourabh Mahajan | <a href="https://github.com/sourabh-mahajan" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/sourabh-mahajan" target="_blank">LinkedIn</a></p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
